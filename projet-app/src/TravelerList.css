@@ -1,0 +1,157 @@
+/* Arrière-plan général */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5; /* Blanc cassé */
+    color: #333; /* Couleur neutre pour le texte */
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #007BFF; /* Bleu océan */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #F5F5F5; /* Blanc cassé */
+    border-radius: 10px;
+    border: 1px solid #87CEEB; /* Bleu ciel */
+    box-shadow: 0 4px 10px rgba(135, 206, 235, 0.4);
+  }
+  
+  form input {
+    flex: 1 1 200px;
+    padding: 10px;
+    border: 1px solid #87CEEB; /* Bleu ciel */
+    border-radius: 5px;
+    font-size: 1em;
+    background: #FFF;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  form input:focus {
+    outline: none;
+    border-color: #007BFF; /* Bleu océan */
+  }
+  
+  form button {
+    flex: 1 1 150px;
+    padding: 10px 15px;
+    background: #FFD700; /* Jaune sable */
+    color: #333;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  form button:hover {
+    background: #FFC107; /* Jaune intense */
+    transform: scale(1.05);
+  }
+  
+  /* Table */
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #FFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Ombre bleu océan */
+  }
+  
+  table thead {
+    background: #2ECC71; /* Vert nature */
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table tr:nth-child(even) {
+    background: #F5F5F5; /* Blanc cassé */
+  }
+  
+  table tr:hover {
+    background: #87CEEB; /* Bleu ciel */
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+  table td {
+    border-bottom: 1px solid #DDD;
+  }
+  
+  /* Boutons d'action */
+  button {
+    padding: 8px 12px ;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-right: 17px;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  button:first-child {
+    background: #2ECC71; /* Vert nature */
+    color: #FFF;
+  }
+  
+  button:first-child:hover {
+    background: #27AE60;
+  }
+  
+  button:last-child {
+    background: #FF7F50; /* Corail */
+    color: #FFF;
+  }
+  
+  button:last-child:hover {
+    background: #E74C3C;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    form input,
+    form button {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 0.9em;
+    }
+  }
+  
